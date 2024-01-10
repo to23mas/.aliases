@@ -1,0 +1,101 @@
+#!/bin/bash
+
+# SCHOOOL
+alias react='cd ~/Documents/School/master/react'
+alias vojir='cd /mnt/php/'
+
+
+#SYSTEM
+alias cdf='cd (fdfind --type directory | fzf)'
+alias ll='ls -l'
+alias la='ls -al'
+alias f='fish'
+alias reload='source ~/.config/fish/config.fish'
+alias up1='sudo nala update'
+alias up2='sudo nala list --upgradable'
+alias up3='sudo nala upgrade -y ; flatpak update -y'
+alias vault='cd ~/Documents/'
+alias code_pacman='code /home/soleus/Documents/School/master/AI01/PACMAN/search'
+# software launchers
+alias aliases='nvim ~/.config/.aliases'
+alias mc='mc -b'
+alias hugin='bash /home/soleus/Documents/School/master/AI_logika/HUGIN_LITE_64.ubuntu-22.04/bin/hugin'
+alias nv='nvim'
+alias n='nvim .'
+alias nf='nvim (fzf)'
+alias rapidminer='sh ~/Documents/rapidminer/rapidminer-studio-10.1.1/rapidminer-studio/RapidMiner-Studio.sh'
+#DIRECTORIES
+alias programming='cd ~/Documents/Programming/'
+alias master='cd ~/Documents/School/master'
+alias svatek='cd ~/Documents/School/master/svatek/projekt/'
+#SIRWISA
+alias docker_prompt='docker exec -it fpm bash'
+
+alias docker_start='sudo systemctl start docker'
+alias docker_stop='sudo systemctl stop docker'
+
+alias nvimconf='cd ~/.config/nvim/'
+
+alias logmanager='cd /home/soleus/Documents/logmanager/'
+alias oscar='cd /home/soleus/Documents/logmanager/web/oscar/'
+alias derf='cd /home/soleus/Documents/logmanager/derf'
+
+alias sirwisa='cd /home/soleus/Documents/sirwisa/'
+alias web='cd /home/soleus/Documents/sirwisa/web/'
+alias fred='cd /home/soleus/Documents/sirwisa/fred/'
+alias school='cd /home/soleus/Documents/School/master/'
+alias webclient='cd /home/soleus/Documents/sirwisa/web-client/'
+alias webapi='cd /home/soleus/Documents/sirwisa/web-api/'
+alias testapp='cd /home/soleus/Documents/Programming/djangoProjects/testApp/'
+
+alias clear_latte_cache='cd ./temp/cache/latte/ && rm -rf ./*'
+
+#python aliases
+
+alias python='python3'
+alias py='python3'
+alias e='elixirc'
+
+# git
+
+alias lg='lazygit'
+alias ggg='cat /home/soleus/Documents/sirwisa/my_docs/gitlab.txt | xclip -selection c'
+alias gane='git --amend --no-edit'
+alias gch="git checkout (git branch | fzf | tr -d '[:space:]')"
+alias gcap='git commit --amend --no-edit ; git push --force'
+alias ga='git add .'
+alias gp='git push'
+
+# docker
+alias dpr='sudo docker system prune -a -f ; sudo docker volume prune'
+alias drm='docker stop (docker ps -aq) ; docker rm (docker ps -aq)'
+alias dc='docker compose'
+alias de='docker exec -it'
+alias dep='docker exec -it postgres bash'
+alias def='docker exec -it fpm bash'
+alias dcu='docker compose up'
+alias dcud='docker compose up -d'
+alias dcut='docker compose -f docker-compose.yml -f docker-compose.test.yml up -d'
+alias dps='docker ps -a'
+alias dl='docker logs -f'
+
+# make
+alias m='make'
+alias ma='make assets'
+alias mt='make acctest'
+alias cs='make cs'
+alias csf='make csf'
+alias stan='make stan'
+
+alias at='echo "vendor/bin/tester -C tests/acceptance/JsonRpc/" | xclip -selection c ; docker compose -f docker-compose.yml -f docker-compose.test.yml run test bash'
+alias ut='vendor/bin/tester -C tests/unit/'
+
+alias coursera='cd /home/soleus/Documents/Programming/Coursera/Algorithmic/'
+
+# TMUX
+alias ts='. /home/soleus/.config/scripts/tmux/tmux_session'
+alias tls='tmux ls'
+
+#PICO
+alias pico='nvim /media/soleus/CIRCUITPY/code.py'
+
