@@ -14,7 +14,7 @@ alias reload='source ~/.config/fish/config.fish'
 alias up1='sudo nala update'
 alias up2='sudo nala list --upgradable'
 alias up3='sudo nala upgrade -y ; flatpak update -y'
-alias vault='cd ~/Documents/'
+alias vault='cd ~/Documents/obsidian/knowledge'
 alias code_pacman='code /home/soleus/Documents/School/master/AI01/PACMAN/search'
 # software launchers
 alias aliases='nvim ~/.config/aliases/personal'
@@ -25,6 +25,7 @@ alias n='nvim .'
 alias nf='nvim (fzf)'
 alias rapidminer='sh ~/Documents/rapidminer/rapidminer-studio-10.1.1/rapidminer-studio/RapidMiner-Studio.sh'
 #DIRECTORIES
+alias config='cd ~/.config'
 alias programming='cd ~/Documents/Programming/'
 alias master='cd ~/Documents/School/master'
 alias svatek='cd ~/Documents/School/master/svatek/projekt/'
@@ -69,6 +70,7 @@ alias gp='git push'
 alias dpr='sudo docker system prune -a -f ; sudo docker volume prune'
 alias drm='docker stop (docker ps -aq) ; docker rm (docker ps -aq)'
 alias dc='docker compose'
+alias drud='drm && dcud'
 alias de='docker exec -it'
 alias dep='docker exec -it postgres bash'
 alias def='docker exec -it fpm bash'
@@ -86,13 +88,13 @@ alias cs='make cs'
 alias csf='make csf'
 alias stan='make stan'
 
-alias at='echo "vendor/bin/tester -C tests/acceptance/JsonRpc/" | xclip -selection c ; docker compose -f docker-compose.yml -f docker-compose.test.yml run test bash'
+alias at='echo -n "vendor/bin/tester -C tests/acceptance/JsonRpc/" | xclip -selection c ; docker compose -f docker-compose.yml -f docker-compose.test.yml run test bash'
 alias ut='vendor/bin/tester -C tests/unit/'
 
 alias coursera='cd /home/soleus/Documents/Programming/Coursera/Algorithmic/'
 
 # TMUX
-alias ts='. /home/soleus/.config/scripts/tmux/tmux_session'
+alias ts='. ~/.config/scripts/tmux/tmux_session'
 alias tls='tmux ls'
 
 #PICO
