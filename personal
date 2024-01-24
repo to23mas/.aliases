@@ -35,20 +35,25 @@ alias docker_prompt='docker exec -it fpm bash'
 alias docker_start='sudo systemctl start docker'
 alias docker_stop='sudo systemctl stop docker'
 
-alias nvimconf='cd ~/.config/nvim/'
+alias nvimconf='nvim ~/.config/nvim/'
+
+alias mux='tmuxinator'
 
 alias logmanager='cd ~/Documents/logmanager/'
-alias oscar='cd ~/Documents/logmanager/web/oscar/'
+alias documentation='cd ~/Documents/logmanager/documentation'
+alias oscar='mux oscar'
 alias derf='cd ~/Documents/logmanager/web/derf'
 alias web='cd ~/Documents/logmanager/web/web'
+alias web-api='mux web-api'
+alias web-client='cd ~/Documents/logmanager/web/web-client/'
 alias fred='cd /home/soleus/Documents/fred/'
+alias dev='make dev-down; make dev-up'
 
 alias school='cd /home/soleus/Documents/School/master/'
-alias webclient='cd /home/soleus/Documents/sirwisa/web-client/'
-alias webapi='cd /home/soleus/Documents/sirwisa/web-api/'
 alias testapp='cd /home/soleus/Documents/Programming/djangoProjects/testApp/'
 
 alias clear_latte_cache='cd ./temp/cache/latte/ && rm -rf ./*'
+alias ruleset='php vendor/bin/phpcs --config-set default_standard ruleset.xml'
 
 #python aliases
 
