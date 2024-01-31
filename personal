@@ -4,7 +4,6 @@
 alias react='cd ~/Documents/School/master/react'
 alias vojir='cd /mnt/php/'
 
-
 #SYSTEM
 alias cdf='cd (fdfind --type directory | fzf)'
 alias ll='ls -l'
@@ -25,26 +24,28 @@ alias n='nvim .'
 alias nf='nvim (fzf)'
 alias rapidminer='sh ~/Documents/rapidminer/rapidminer-studio-10.1.1/rapidminer-studio/RapidMiner-Studio.sh'
 #DIRECTORIES
-alias config='cd ~/.config'
+alias conf='cd ~/.config'
 alias programming='cd ~/Documents/Programming/'
 alias master='cd ~/Documents/School/master'
 alias svatek='cd ~/Documents/School/master/svatek/projekt/'
 #SIRWISA
 alias docker_prompt='docker exec -it fpm bash'
-
 alias docker_start='sudo systemctl start docker'
 alias docker_stop='sudo systemctl stop docker'
 
 alias nvimconf='nvim ~/.config/nvim/'
 
+alias aoc='cd ~/Documents/Programming/aoc/clojure-23'
 alias mux='tmuxinator'
 
 alias logmanager='cd ~/Documents/logmanager/'
 alias documentation='cd ~/Documents/logmanager/documentation'
-alias oscar='mux oscar'
+alias oscar='cd ~/Documents/logmanager/web/web/oscar'
+alias oscarx='mux oscar'
 alias derf='cd ~/Documents/logmanager/web/derf'
 alias web='cd ~/Documents/logmanager/web/web'
-alias web-api='mux web-api'
+alias web-api='cd ~/Documents/logmanager/web/web-api/'
+alias web-apix='mux web-api'
 alias web-client='cd ~/Documents/logmanager/web/web-client/'
 alias fred='cd /home/soleus/Documents/fred/'
 alias dev='make dev-down; make dev-up'
