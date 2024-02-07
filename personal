@@ -33,7 +33,7 @@ alias docker_prompt='docker exec -it fpm bash'
 alias docker_start='sudo systemctl start docker'
 alias docker_stop='sudo systemctl stop docker'
 
-alias nvimconf='nvim ~/.config/nvim/'
+alias nvimconf='cd ~/.config/nvim/ ; nvim .'
 
 alias aoc='cd ~/Documents/Programming/aoc/clojure-23'
 alias mux='tmuxinator'
