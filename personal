@@ -27,6 +27,8 @@ alias rapidminer='sh ~/Documents/rapidminer/rapidminer-studio-10.1.1/rapidminer-
 alias conf='cd ~/.config'
 alias programming='cd ~/Documents/Programming/'
 alias master='cd ~/Documents/School/master'
+alias django='cd ~/Documents/School/master/django'
+alias djangox='tmuxinator djangox'
 alias svatek='cd ~/Documents/School/master/svatek/projekt/'
 #SIRWISA
 alias docker_prompt='docker exec -it fpm bash'
@@ -100,9 +102,9 @@ alias ut='vendor/bin/tester -C tests/unit/'
 alias coursera='cd /home/soleus/Documents/Programming/Coursera/Algorithmic/'
 
 # TMUX
+alias ta='tmux a'
 alias ts='. ~/.config/scripts/tmux/tmux_session'
-alias tls='tmux ls'
 
 #PICO
 alias pico='nvim /media/soleus/CIRCUITPY/code.py'
-
+alias side='cd ~/Documents/side/Husite-nette/'
