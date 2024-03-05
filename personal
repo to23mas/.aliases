@@ -30,10 +30,6 @@ alias master='cd ~/Documents/School/master'
 alias django='cd ~/Documents/School/master/django'
 alias djangox='tmuxinator djangox'
 alias svatek='cd ~/Documents/School/master/svatek/projekt/'
-#SIRWISA
-alias docker_prompt='docker exec -it fpm bash'
-alias docker_start='sudo systemctl start docker'
-alias docker_stop='sudo systemctl stop docker'
 
 alias nvimconf='cd ~/.config/nvim/ ; nvim .'
 
@@ -50,6 +46,7 @@ alias web-api='cd ~/Documents/logmanager/web/web-api/'
 alias web-apix='mux web-api'
 alias web-client='cd ~/Documents/logmanager/web/web-client/'
 alias web-clientx='mux web-client'
+alias centralx='mux centralx'
 alias fred='cd /home/soleus/Documents/fred/'
 alias dev='make dev-down; make dev-up'
 
