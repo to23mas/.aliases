@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# SCHOOOL
-alias react='cd ~/Documents/School/master/react'
-alias vojir='cd /mnt/php/'
-
 #SYSTEM
 alias cdf='cd (fdfind --type directory | fzf)'
 alias ll='ls -l'
@@ -14,15 +10,12 @@ alias up1='sudo nala update'
 alias up2='sudo nala list --upgradable'
 alias up3='sudo nala upgrade -y ; flatpak update -y'
 alias vault='cd ~/Documents/obsidian/knowledge'
-alias code_pacman='code /home/soleus/Documents/School/master/AI01/PACMAN/search'
+
 # software launchers
 alias aliases='nvim ~/.config/aliases/personal'
-alias mc='mc -b'
-alias hugin='bash /home/soleus/Documents/School/master/AI_logika/HUGIN_LITE_64.ubuntu-22.04/bin/hugin'
 alias nv='nvim'
 alias n='nvim .'
 alias nf='nvim (fzf)'
-alias rapidminer='sh ~/Documents/rapidminer/rapidminer-studio-10.1.1/rapidminer-studio/RapidMiner-Studio.sh'
 #DIRECTORIES
 alias conf='cd ~/.config'
 alias programming='cd ~/Documents/Programming/'
@@ -47,17 +40,21 @@ alias web-apix='mux web-api'
 alias web-client='cd ~/Documents/logmanager/web/web-client/'
 alias web-clientx='mux web-client'
 alias centralx='mux centralx'
+alias central='cd ~/Documents/logmanager/web/central-plexus/'
 alias fred='cd /home/soleus/Documents/fred/'
 alias dev='make dev-down; make dev-up'
 
 alias school='cd /home/soleus/Documents/School/master/'
-alias testapp='cd /home/soleus/Documents/Programming/djangoProjects/testApp/'
 
+#PHP
+alias set_phpcs='php vendor/bin/phpcs --config-set default_standard ruleset.xml'
+
+#Logmanageer
+alias vendor_owner='sudo chown -R $USER vendor && sudo chgrp -R $USER vendor'
 alias clear_latte_cache='cd ./temp/cache/latte/ && rm -rf ./*'
 alias ruleset='php vendor/bin/phpcs --config-set default_standard ruleset.xml'
 
-#python aliases
-
+#REPLs ENVs
 alias python='python3'
 alias py='python3'
 alias e='elixirc'
