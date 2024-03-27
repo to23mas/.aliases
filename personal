@@ -14,7 +14,6 @@ alias up3='sudo nala upgrade -y ; flatpak update -y'
 alias mc='mc -b'
 alias hugin='bash /home/soleus/Documents/School/master/AI_logika/HUGIN_LITE_64.ubuntu-22.04/bin/hugin'
 alias rapidminer='sh ~/Documents/rapidminer/rapidminer-studio-10.1.1/rapidminer-studio/RapidMiner-Studio.sh'
-alias nv='nvim'
 alias n='nvim .'
 
 #Logmanager
