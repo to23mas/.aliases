@@ -49,6 +49,7 @@ alias dcu='docker compose up'
 alias dcud='docker compose up -d'
 alias dps='docker ps -a'
 alias dl='docker logs -f'
+alias fpm-user='docker exec -it fpm php bin/console db:createUser admin-tom admin'
 
 # make
 alias m='make'
