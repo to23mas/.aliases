@@ -33,6 +33,8 @@ alias svatek='cd ~/Documents/School/master/svatek/projekt/'
 
 alias nvimconf='cd ~/.config/nvim/ ; nvim .'
 
+#Logmanager
+alias vm='echo "curl -s https://raw.githubusercontent.com/to23mas/dev-tools/refs/heads/main/script.sh | bash" | xclip -selection c && echo "CURL copied"'
 #programming
 alias aoc='cd ~/Documents/Programming/aoc/clojure-23'
 
