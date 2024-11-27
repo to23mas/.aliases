@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# SCHOOOL
-alias react='cd ~/Documents/School/master/react'
-alias vojir='cd /mnt/php/'
-
 #SYSTEM
 alias cdf='cd (fdfind --type directory | fzf)'
 alias ll='ls -l'
@@ -13,63 +9,28 @@ alias reload='source ~/.config/fish/config.fish'
 alias up1='sudo nala update'
 alias up2='sudo nala list --upgradable'
 alias up3='sudo nala upgrade -y ; flatpak update -y'
-alias vault='cd ~/Documents/obsidian/knowledge'
-alias code_pacman='code /home/soleus/Documents/School/master/AI01/PACMAN/search'
+
 # software launchers
-alias aliases='nvim ~/.config/aliases/personal'
 alias mc='mc -b'
 alias hugin='bash /home/soleus/Documents/School/master/AI_logika/HUGIN_LITE_64.ubuntu-22.04/bin/hugin'
+alias rapidminer='sh ~/Documents/rapidminer/rapidminer-studio-10.1.1/rapidminer-studio/RapidMiner-Studio.sh'
 alias nv='nvim'
 alias n='nvim .'
-alias nf='nvim (fzf)'
-alias rapidminer='sh ~/Documents/rapidminer/rapidminer-studio-10.1.1/rapidminer-studio/RapidMiner-Studio.sh'
-#DIRECTORIES
-alias conf='cd ~/.config'
-alias programming='cd ~/Documents/Programming/'
-alias master='cd ~/Documents/School/master'
-alias django='cd ~/Documents/School/master/django'
-alias djangox='tmuxinator djangox'
-alias svatek='cd ~/Documents/School/master/svatek/projekt/'
-
-alias nvimconf='cd ~/.config/nvim/ ; nvim .'
 
 #Logmanager
 alias vm='echo "curl -s https://raw.githubusercontent.com/to23mas/dev-tools/refs/heads/main/script.sh | bash" | xclip -selection c && echo "CURL copied"'
-#programming
-alias aoc='cd ~/Documents/Programming/aoc/clojure-23'
 
-alias mux='tmuxinator'
-
-alias logmanager='cd ~/Documents/logmanager/'
-alias documentation='cd ~/Documents/logmanager/documentation'
-alias oscar='cd ~/Documents/logmanager/web/web/oscar'
-alias oscarx='mux oscar'
-alias derf='cd ~/Documents/logmanager/web/derf'
-alias web='cd ~/Documents/logmanager/web/web'
-alias web-api='cd ~/Documents/logmanager/web/web-api/'
-alias web-apix='mux web-api'
-alias web-client='cd ~/Documents/logmanager/web/web-client/'
-alias web-clientx='mux web-client'
-alias centralx='mux central'
-alias central='cd ~/Documents/logmanager/web/central-plexus/'
-alias fred='cd /home/soleus/Documents/fred/'
-alias dev='make dev-down; make dev-up'
-
-alias school='cd /home/soleus/Documents/School/master/'
-alias testapp='cd /home/soleus/Documents/Programming/djangoProjects/testApp/'
-
+# nette
 alias clear_latte_cache='cd ./temp/cache/latte/ && rm -rf ./*'
 alias ruleset='php vendor/bin/phpcs --config-set default_standard ruleset.xml'
 
-#python aliases
-
+# repl aliases
 alias python='python3'
 alias py='python3'
 alias e='elixirc'
 
 # git
 alias lg='lazygit'
-alias ggg='cat /home/soleus/Documents/sirwisa/my_docs/gitlab.txt | xclip -selection c'
 alias gane='git --amend --no-edit'
 alias gch="git checkout (git branch | fzf | tr -d '[:space:]')"
 alias gcap='git commit --amend --no-edit ; git push --force'
@@ -82,33 +43,45 @@ alias drm='docker stop (docker ps -aq) ; docker rm (docker ps -aq)'
 alias dc='docker compose'
 alias drud='drm && dcud'
 alias de='docker exec -it'
-alias dep='docker exec -it postgres bash'
-alias def='docker exec -it fpm bash'
 alias dcu='docker compose up'
 alias dcud='docker compose up -d'
-alias dcut='docker compose -f docker-compose.yml -f docker-compose.test.yml up -d'
 alias dps='docker ps -a'
 alias dl='docker logs -f'
 
 # make
 alias m='make'
-alias ma='make assets'
-alias mt='make acctest'
 alias cc='make cc'
 alias cs='make cs'
 alias csf='make csf'
 alias stan='make stan'
-alias fpm-user='docker exec -it fpm php bin/console db:createUser admin-tom admin'
 
 alias at='echo -n "vendor/bin/tester -C tests/acceptance/JsonRpc/" | xclip -selection c ; docker compose -f docker-compose.yml -f docker-compose.test.yml run test bash'
 alias ut='vendor/bin/tester -C tests/unit/'
 
+# jumps
 alias coursera='cd /home/soleus/Documents/Programming/Coursera/Algorithmic/'
-
-# TMUX
-alias ta='tmux a'
-alias ts='. ~/.config/scripts/tmux/tmux_session'
-
-#PICO
 alias pico='nvim /media/soleus/CIRCUITPY/code.py'
 alias side='cd ~/Documents/side/Husite-nette/'
+alias school='cd /home/soleus/Documents/School/master/'
+alias vault='cd ~/Documents/obsidian/knowledge'
+alias conf='cd ~/.config'
+alias programming='cd ~/Documents/Programming/'
+alias master='cd ~/Documents/School/master'
+alias django='cd ~/Documents/School/master/django'
+alias svatek='cd ~/Documents/School/master/svatek/projekt/'
+alias aoc='cd ~/Documents/Programming/aoc/clojure-23'
+alias logmanager='cd ~/Documents/logmanager/'
+alias oscar='cd ~/Documents/logmanager/web/web/oscar'
+
+# config shortcuts
+alias aliases='nvim ~/.config/aliases/personal'
+alias nvimconf='cd ~/.config/nvim/ ; nvim .'
+
+# launchers
+alias wezterm='flatpak run org.wezfurlong.wezterm'
+
+# TMUX
+alias x='tmuxinator'
+alias ta='tmux a'
+alias t='tmux'
+alias ts='. ~/.config/scripts/tmux/tmux_session'
