@@ -19,6 +19,8 @@ alias n='nvim .'
 
 #Logmanager
 alias vm='echo "curl -s https://raw.githubusercontent.com/to23mas/dev-tools/refs/heads/main/script.sh | bash" | xclip -selection c && echo "CURL copied"'
+alias bssh='ssh -t micka@dev-bastion.dev.office.ad --'
+alias bsshclear='bssh --osh selfForgetHostKey --port22 --host'
 
 # nette
 alias clear_latte_cache='cd ./temp/cache/latte/ && rm -rf ./*'
