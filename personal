@@ -58,6 +58,8 @@ alias csf='make csf'
 alias stan='make stan'
 
 alias at='echo -n "vendor/bin/tester -C tests/acceptance/JsonRpc/" | xclip -selection c ; docker compose -f docker-compose.yml -f docker-compose.test.yml run test bash'
+alias it='echo -n "vendor/bin/tester -C tests/integration/Sso/" | xclip -selection c ; docker compose -f docker-compose.yml -f docker-compose.test.yml run test bash'
+
 alias ut='vendor/bin/tester -C tests/unit/'
 
 # jumps
