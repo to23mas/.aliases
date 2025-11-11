@@ -72,8 +72,6 @@ alias master='cd ~/Documents/School/master'
 alias django='cd ~/Documents/School/master/django'
 alias svatek='cd ~/Documents/School/master/svatek/projekt/'
 alias aoc='cd ~/Documents/Programming/aoc/clojure-23'
-alias logmanager='cd ~/Documents/logmanager/'
-alias oscar='cd ~/Documents/logmanager/web/web/oscar'
 
 # config shortcuts
 alias aliases='nvim ~/.config/aliases/personal'
