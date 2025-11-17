@@ -82,6 +82,7 @@ alias wezterm='flatpak run org.wezfurlong.wezterm'
 
 # TMUX
 alias x='tmuxinator start'
+alias tx='tmuxinator start default'
 alias ta='tmux a'
 alias t='tmux new-session -As $(basename "$PWD")'
 alias ts='. ~/.config/scripts/tmux/tmux_session'
