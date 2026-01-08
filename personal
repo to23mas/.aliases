@@ -15,6 +15,7 @@ alias mc='mc -b'
 alias hugin='bash /home/soleus/Documents/School/master/AI_logika/HUGIN_LITE_64.ubuntu-22.04/bin/hugin'
 alias rapidminer='sh ~/Documents/rapidminer/rapidminer-studio-10.1.1/rapidminer-studio/RapidMiner-Studio.sh'
 alias n='nvim .'
+alias opencode='nix run nixpkgs#opencode'
 
 #Logmanager
 alias vm='echo "curl -s https://raw.githubusercontent.com/to23mas/dev-tools/refs/heads/main/script.sh | bash" | xclip -selection c && echo "CURL copied"'
